@@ -5,26 +5,33 @@
     <style>
       .wrapper {
         display: grid;
+        display: -ms-grid;
+        -ms-grid-columns: repeat(12, 1fr);
         grid-template-columns: repeat(12, 1fr);
+        -ms-grid-rows: 40px 100px 40px;
         grid-template-rows: 40px 100px 40px;
         }
 
       .header {
+        -ms-grid-column: span 12;
         grid-column: span 12;
         background-color: red;
         }
 
       .menu {
+        -ms-grid-column: span 4;
         grid-column: span 4;
         background-color: blue;
       }
 
       .content {
+        -ms-grid-column: span 8;
         grid-column: span 8;
         background-color: yellow;
         }
 
       .footer {
+        -ms-grid-column: span 12;
         grid-column: span 12;
         background-color: tomato;
         }
